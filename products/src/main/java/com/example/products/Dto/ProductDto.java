@@ -1,11 +1,10 @@
-package com.example.products.Entity;
+package com.example.products.Dto;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-import javax.persistence.*;
-
-@Entity
-@Table(name = "product")
-public class ProductEntity {
+public class ProductDto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
@@ -37,11 +36,6 @@ public class ProductEntity {
         this.price = price;
     }
 
-    /*public String getProduct_img() {
-        return product_img;
-    }
 
-    public void setProduct_img(String product_img) {
-        this.product_img = product_img;
-    }*/
 }
+
